@@ -22,8 +22,7 @@ public class UserService {
 
     @Transactional
     public User save(User user) {
-        User newUser = repository.save(user);
-        return newUser;
+        return repository.save(user);
     }
 
     @Transactional
